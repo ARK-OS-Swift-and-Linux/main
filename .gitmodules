@@ -1,0 +1,106 @@
+[submodule "arkos/arkrt/Input/xkeyboard-config"]
+	path = arkos/arkrt/Input/xkeyboard-config
+	url = https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git
+[submodule "arkos/arkrt/Input/libxkbcommon"]
+	path = arkos/arkrt/Input/libxkbcommon
+	url = https://github.com/xkbcommon/libxkbcommon.git
+[submodule "arkos/arkrt/Graphics/Wayland/wayland"]
+	path = arkos/arkrt/Graphics/Wayland/wayland
+	url = https://gitlab.freedesktop.org/wayland/wayland.git
+[submodule "arkos/arkrt/Graphics/Wayland/Runtime/wayland-protocols"]
+	path = arkos/arkrt/Graphics/Wayland/Runtime/wayland-protocols
+	url = https://gitlab.freedesktop.org/wayland/wayland-protocols.git
+[submodule "arkos/arkrt/Graphics/GTK3/CoreLibs/glib"]
+	path = arkos/arkrt/Graphics/GTK3/CoreLibs/glib
+	url = https://gitlab.gnome.org/GNOME/glib.git
+[submodule "arkos/arkrt/Graphics/GTK3/CoreLibs/gobject-introspection"]
+	path = arkos/arkrt/Graphics/GTK3/CoreLibs/gobject-introspection
+	url = https://gitlab.gnome.org/GNOME/gobject-introspection.git
+[submodule "arkos/arkrt/Graphics/GTK3/CoreLibs/gdk-pixbuf"]
+	path = arkos/arkrt/Graphics/GTK3/CoreLibs/gdk-pixbuf
+	url = https://gitlab.gnome.org/GNOME/gdk-pixbuf.git
+[submodule "arkos/arkrt/Graphics/GTK3/CoreLibs/at-spi2-core"]
+	path = arkos/arkrt/Graphics/GTK3/CoreLibs/at-spi2-core
+	url = https://gitlab.gnome.org/GNOME/at-spi2-core.git
+[submodule "arkos/arkrt/Graphics/GTK3/Runtime/gsettings-desktop-schemas"]
+	path = arkos/arkrt/Graphics/GTK3/Runtime/gsettings-desktop-schemas
+	url = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git
+[submodule "arkos/arkrt/Graphics/GTK3/Runtime/adwaita-icon-theme"]
+	path = arkos/arkrt/Graphics/GTK3/Runtime/adwaita-icon-theme
+	url = https://gitlab.gnome.org/GNOME/adwaita-icon-theme.git
+[submodule "arkos/arkrt/Graphics/GTK3/Runtime/shared-mime-info"]
+	path = arkos/arkrt/Graphics/GTK3/Runtime/shared-mime-info
+	url = https://gitlab.freedesktop.org/xdg/shared-mime-info.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/cairo"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/cairo
+	url = https://gitlab.freedesktop.org/cairo/cairo.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/pixman"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/pixman
+	url = https://gitlab.freedesktop.org/pixman/pixman.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/fribidi"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/fribidi
+	url = https://github.com/fribidi/fribidi.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/pango"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/pango
+	url = https://gitlab.gnome.org/GNOME/pango.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/freetype"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/freetype
+	url = https://gitlab.freedesktop.org/freetype/freetype.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/harfbuzz"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/harfbuzz
+	url = https://github.com/harfbuzz/harfbuzz.git
+[submodule "arkos/arkrt/Graphics/GTK3/2Dvector/fontconfig"]
+	path = arkos/arkrt/Graphics/GTK3/2Dvector/fontconfig
+	url = https://gitlab.freedesktop.org/fontconfig/fontconfig.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/pcre2"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/pcre2
+	url = https://github.com/PCRE2Project/pcre2.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/libffi"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/libffi
+	url = https://github.com/libffi/libffi.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/libjpeg-turbo"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/libjpeg-turbo
+	url = https://github.com/libjpeg-turbo/libjpeg-turbo.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/libxml2"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/libxml2
+	url = https://gitlab.gnome.org/GNOME/libxml2.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/zlib"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/zlib
+	url = https://github.com/madler/zlib.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/expat"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/expat
+	url = https://github.com/libexpat/libexpat.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/libtiff"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/libtiff
+	url = https://gitlab.com/libtiff/libtiff.git
+[submodule "arkos/arkrt/Graphics/GTK3/Foundation/libpng"]
+	path = arkos/arkrt/Graphics/GTK3/Foundation/libpng
+	url = https://github.com/glennrp/libpng.git
+[submodule "arkos/arkrt/Graphics/GTK3/Graphics/mesa"]
+	path = arkos/arkrt/Graphics/GTK3/Graphics/mesa
+	url = https://gitlab.freedesktop.org/mesa/mesa.git
+[submodule "arkos/arkrt/Graphics/GTK3/Graphics/libdrm"]
+	path = arkos/arkrt/Graphics/GTK3/Graphics/libdrm
+	url = https://gitlab.freedesktop.org/mesa/drm.git
+[submodule "arkos/arkrt/Graphics/GTK3/Graphics/gtk3"]
+	path = arkos/arkrt/Graphics/GTK3/Graphics/gtk3
+	url = https://gitlab.gnome.org/GNOME/gtk.git
+	branch = gtk-3-24
+[submodule "arkos/arkrt/Graphics/GTK3/Graphics/libepoxy"]
+	path = arkos/arkrt/Graphics/GTK3/Graphics/libepoxy
+	url = https://github.com/anholt/libepoxy.git
+[submodule "arkos/arkrt/Graphics/GTK3/Input/xkeyboard-config"]
+	path = arkos/arkrt/Graphics/GTK3/Input/xkeyboard-config
+	url = https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git
+[submodule "arkos/arkrt/Graphics/GTK3/Input/libxkbcommon"]
+	path = arkos/arkrt/Graphics/GTK3/Input/libxkbcommon
+	url = https://github.com/xkbcommon/libxkbcommon.git
+[submodule "arkos/arkrt/Graphics/GTK3/Support/seatd"]
+	path = arkos/arkrt/Graphics/GTK3/Support/seatd
+	url = https://github.com/kennylevinsen/seatd
+[submodule "arkos/arkrt/Graphics/GTK3/Graphics/weston"]
+	path = arkos/arkrt/Graphics/GTK3/Graphics/weston
+	url = https://gitlab.freedesktop.org/wayland/weston.git
+[submodule "arkos"]
+	path = arkos
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os.git
