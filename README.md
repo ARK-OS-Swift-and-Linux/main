@@ -2,25 +2,11 @@
 
 Welcome to the primary repository for **ARK-OS**! 
 
-(I am currently working on my own version of gogs to protect validation and proper following of the rules below)
+You can sync the repo via:
+```bash
+curl -fsSL https://raw.githubusercontent.com/ARK-OS-Swift-and-Linux/main/refs/heads/main/sync.sh | bash
+```
 
-> [!NOTE]
-> This root file contains the repository rules and contribution guidelines. For technical documentation and system information, please refer to the primary [README.md](./arkos/README.md) inside the `arkos` folder.
-
----
-
-## 📋 Repository Rules & Guidelines
-
-To maintain the integrity of this project, all contributors must strictly adhere to the following rules. Failure to comply will result in repository deletion or access revocation.
-
-* **Forking policy:** You are permitted to fork this repository only.
-* **Naming convention:** Your forked repository **must** be named exactly `ARK-OS`. Repositories using any other name will be automatically deleted.
-* **Content restrictions:** Hosting alternative repositories or malicious content under this project umbrella is strictly prohibited.
-* **Resource limits:** Users are granted permission to create exactly one (1) repository.
-* **Profile verification:** You must provide a valid username and a functional email address when signing in or contributing.
-* **Security & reporting:** If you have questions, notice off-topic activity, or spot suspicious content, immediately contact the project owner at [aarav.kharade1234@gmail.com](mailto:arkosgogs@gmail.com).
-
----
 
 ## 🛠️ Architecture & Device Support
 

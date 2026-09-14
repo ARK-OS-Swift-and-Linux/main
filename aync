@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# aync: ARK-OS multi-repo git command runner
+
+if [ -z "$1" ]; then
+    echo "Usage: ./aync [git command]"
+    echo "Example: ./aync add ."
+    echo "         ./aync commit -m \"message\""
+    echo "         ./aync push"
+    exit 1
+fi
+
+echo "================================================="
+echo "Running 'git $@' in all main repositories..."
+echo "================================================="
+
+# List of main repositories (from the deepest submodules up to the root wrapper)
+REPOS=(
+    "arkos/aake_src"
+    "arkos/arkrt"
+    "arkos/boot"
+    "arkos/frameworks"
+    "arkos/kernel"
+    "arkos/prebuilts"
+    "arkos/vendor"
+    "arkos"
+    "."
+)
+
+for repo in "${REPOS[@]}"; do
+    if [ -d "$repo" ]; then
+        echo "-------------------------------------------------"
+        echo "👉 [ $repo ]"
+        echo "-------------------------------------------------"
+        (cd "$repo" && git "$@")
+    fi
+done
+
+echo "-------------------------------------------------"
+echo "✅ Finished running 'git $@'"
+echo "================================================="
