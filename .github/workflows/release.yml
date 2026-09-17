@@ -1,0 +1,70 @@
+name: Build and Release ARK-OS
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            curl \
+            wget \
+            qemu-system-x86 \
+            nasm \
+            gcc \
+            g++ \
+            mtools \
+            xorriso \
+            ninja-build \
+            llvm \
+            lld \
+            clang
+            
+      - name: Setup Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "5.10"
+          
+      - name: Sync ARK-OS
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/ARK-OS-Swift-and-Linux/main/refs/heads/main/sync.sh | bash
+          
+      - name: Compile OS (x86_64)
+        run: |
+          cd arkos
+          chmod +x aake
+          ./aake build --x86_64
+          
+      - name: Publish Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME="0.0.0:${{ github.run_number }}"
+          RELEASE_NAME="Pre-Alpha 0.0.0:${{ github.run_number }}"
+          
+          # Create and push the tag to the repository
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "$TAG_NAME"
+          git push origin "$TAG_NAME"
+          
+          # Create a new GitHub Release and upload the finished files
+          cd arkos
+          gh release create "$TAG_NAME" \
+            --title "$RELEASE_NAME" \
+            --notes "Automated release from commit ${{ github.sha }}" \
+            finished/*
