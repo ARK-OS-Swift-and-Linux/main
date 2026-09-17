@@ -66,8 +66,8 @@ fi
 # Submodule Initialization
 # -----------------------------------------------------------------------------
 info "Initializing and updating submodules recursively..."
-git submodule sync --recursive --depth=1
-git submodule update --init --recursive --depth=1|| { 
+git submodule sync --recursive
+git submodule update --init --recursive --depth=1 || { 
     error "Failed to initialize or update submodules."
     popd > /dev/null
     exit 1
