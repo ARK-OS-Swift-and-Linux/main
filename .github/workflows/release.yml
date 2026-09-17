@@ -32,7 +32,8 @@ jobs:
             ninja-build \
             llvm \
             lld \
-            clang
+            clang \
+            glibc
             
       - name: Setup Swift
         uses: swift-actions/setup-swift@v2
