@@ -2,6 +2,8 @@
 
 Welcome to the primary repository for **ARK-OS**! 
 
+BUILD STATUS : FAILING
+
 You can sync the repo via:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ARK-OS-Swift-and-Linux/main/refs/heads/main/sync.sh | bash
