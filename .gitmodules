@@ -1,3 +1,3 @@
 [submodule "arkos"]
 	path = arkos
-	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os.git
+	url = https://github.com/ARK-OS-Swift-and-Linux/ark-os.git
