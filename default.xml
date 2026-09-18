@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Automatically generated remotes -->
+  <remote name="arkos-remote" fetch="https://github.com" />
+  <remote name="remote1" fetch="https://gitlab.freedesktop.org" />
+  <remote name="remote2" fetch="https://gitlab.gnome.org" />
+  <remote name="remote3" fetch="https://gitlab.com" />
+  <remote name="gerrit" fetch="https://gerrit.googlesource.com" />
+
+
+  <default revision="refs/heads/main" remote="arkos-remote" sync-j="4" />
+
+  <!-- Flattened project repositories -->
+  <project path="arkos" name="ARK-OS-Swift-and-Linux/ark-os" remote="arkos-remote" />
+  <project path="arkos/aake_src" name="ARK-OS-Swift-and-Linux/aake" remote="arkos-remote" />
+  <project path="arkos/arkrt" name="ARK-OS-Swift-and-Linux/ark-os-arkrt" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/cairo" name="cairo/cairo" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/fontconfig" name="fontconfig/fontconfig" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/freetype" name="freetype/freetype" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/freetype/subprojects/dlg" name="nyorain/dlg" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/fribidi" name="fribidi/fribidi" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/harfbuzz" name="harfbuzz/harfbuzz" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/pango" name="GNOME/pango" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/2Dvector/pixman" name="pixman/pixman" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/at-spi2-core" name="GNOME/at-spi2-core" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/gdk-pixbuf" name="GNOME/gdk-pixbuf" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/glib" name="GNOME/glib" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/glib/subprojects/gvdb" name="GNOME/gvdb" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/gobject-introspection" name="GNOME/gobject-introspection" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/CoreLibs/gobject-introspection/gobject-introspection-tests" name="GNOME/gobject-introspection-tests" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/expat" name="libexpat/libexpat" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/libffi" name="libffi/libffi" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/libjpeg-turbo" name="libjpeg-turbo/libjpeg-turbo" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/libpng" name="pnggroup/libpng" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/libtiff" name="libtiff/libtiff" remote="remote3" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/libxml2" name="GNOME/libxml2" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/pcre2" name="PCRE2Project/pcre2" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/pcre2/deps/sljit" name="zherczeg/sljit" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Foundation/zlib" name="madler/zlib" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/gtk3" name="GNOME/gtk" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/gtk3/subprojects/glib/subprojects/gvdb" name="GNOME/gvdb" remote="remote2" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/libdrm" name="mesa/drm" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/libepoxy" name="anholt/libepoxy" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/mesa" name="mesa/mesa" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/Graphics/weston" name="wayland/weston" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/GTK3/Support/seatd" name="kennylevinsen/seatd" remote="arkos-remote" />
+  <project path="arkos/arkrt/Graphics/Wayland/Runtime/wayland-protocols" name="wayland/wayland-protocols" remote="remote1" />
+  <project path="arkos/arkrt/Graphics/Wayland/wayland" name="wayland/wayland" remote="remote1" />
+  <project path="arkos/arkrt/Input/libxkbcommon" name="xkbcommon/libxkbcommon" remote="arkos-remote" />
+  <project path="arkos/arkrt/Input/xkeyboard-config" name="xkeyboard-config/xkeyboard-config" remote="remote1" />
+  <project path="arkos/arkrt/Terminal" name="ARK-OS-Swift-and-Linux/sash" remote="arkos-remote" />
+  <project path="arkos/boot" name="ARK-OS-Swift-and-Linux/ark-os-boot" remote="arkos-remote" />
+  <project path="arkos/frameworks" name="ARK-OS-Swift-and-Linux/ark-os-frameworks" remote="arkos-remote" />
+  <project path="arkos/kernel" name="ARK-OS-Swift-and-Linux/ark-os-kernel" remote="arkos-remote" />
+  <project path="arkos/prebuilts" name="ARK-OS-Swift-and-Linux/ark-os-prebuilts" remote="arkos-remote" />
+  <project path="arkos/system" name="ARK-OS-Swift-and-Linux/ark-os-system" remote="arkos-remote" />
+  <project path="arkos/vendor" name="ARK-OS-Swift-and-Linux/ark-os-vendor" remote="arkos-remote" />
+</manifest>
